@@ -1,12 +1,9 @@
 # nkx CLI
 
-Public binary releases for `nkx` — the Nakodax customer/CI CLI
-(register / materialize / rehook / unlock / reseal / unlock-mock /
-reseal-mock / status).
-
-Source lives in the private `nakodax/nakodax` monorepo
-(`packages/nkx-cli`); this repo hosts only signed Release assets so the
-binary can be downloaded without a token.
+Public releases of `nkx` — the Nakodax customer/CI command-line tool:
+`register`, `materialize`, `rehook`, `unlock`, `reseal`, `unlock-mock`,
+`reseal-mock`, `status`. A single dependency-free binary; no Python or
+Node.js install is required to run it.
 
 ## Install
 
@@ -22,5 +19,15 @@ Or via Homebrew (macOS/Linux):
 brew install nakodax/tap/nkx
 ```
 
+Replace `VERSION` and `linux-amd64` with the release and platform you need —
+darwin/windows/arm64 assets are published under the same tag, named the
+same way.
+
 Every release asset is signed with keyless `cosign sign-blob`. See a
 release's notes for the exact `cosign verify-blob` command.
+
+## Use
+
+Your Nakodax dashboard's Connect page for a protected repository gives you
+the exact command and credentials for your setup — a deployment, or a CI
+build.
