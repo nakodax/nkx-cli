@@ -1,16 +1,16 @@
 # nkx: command-line tool for NakodaX protected software
 
-**nkx is the NakodaX command-line tool for running and building software whose source code is protected by [NakodaX Source Protection](https://nakodax.com/source).** It lets a customer's server or a CI build unlock protected code only when it runs, under permission you control. It is a single dependency-free binary for macOS, Linux and Windows. No Python or Node.js install is required.
+**nkx is the NakodaX command-line tool for running and building software whose source code is protected by [NakodaX Source Protection](https://nakodax.com/source).** It lets a deployment or a CI build unlock protected code only when it runs, under permission you control. It is a single dependency-free binary for macOS, Linux and Windows. No Python or Node.js install is required.
 
 If you want to send large video or audio recordings to NakodaX box instead, see [nkx-upload](https://github.com/nakodax/nkx-upload).
 
 ## What nkx is for
 
-Software vendors often have to hand customers or contractors a readable copy of their source code. Once that copy is out, it can be copied, kept after the contract ends, or fed to an AI tool. With NakodaX Source Protection the code stays encrypted, and nkx is the tool that asks for permission and unlocks it at run time, on the machine that is allowed to run it.
+Software vendors often have to hand partners or contractors a readable copy of their source code. Once that copy is out, it can be copied, kept after the contract ends, or fed to an AI tool. With NakodaX Source Protection the code stays encrypted, and nkx is the tool that asks for permission and unlocks it at run time, on the machine that is allowed to run it.
 
-- Deploy software to a customer without giving them readable source code.
-- Unlock protected code in a CI build or a customer deployment.
-- End access for one customer without affecting the others.
+- Deploy software to another party's servers without giving them readable source code.
+- Unlock protected code in a CI build or a deployment.
+- End access for one deployment without affecting the others.
 
 ## Install
 
@@ -62,7 +62,7 @@ Compare the file with the release's `SHA256SUMS`, or verify its cosign signature
 
 ### Can access be ended after deployment?
 
-Yes. Access is checked each time protected code is unlocked, so you can end it for one customer deployment without affecting others.
+Yes. Access is checked each time protected code is unlocked, so you can end it for one deployment without affecting others.
 
 ## About NakodaX
 
